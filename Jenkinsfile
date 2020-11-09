@@ -4,7 +4,18 @@ pipeline {
     }
 
     stages {
-        stage('Test for py') {
+        
+	stage('fix permession'){
+		
+	     steps{
+		    sh "sudo chown root:jenkins /run/docker.sock"
+		}
+	    
+	}
+
+
+
+	stage('Test for py') {
             steps {
                 sh "pytest"
             }
