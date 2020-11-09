@@ -5,14 +5,11 @@ pipeline {
 
     stages {
         
-	stage('install pyetest')
-	{
-		sh "pip install pytest"
-	}
-
 
 	stage('Test for py') {
             steps {
+		
+		sh "pip install pytest"
                 sh "pytest"
             }
         }
