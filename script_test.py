@@ -6,6 +6,7 @@ import script
 
 
 
+
 def test_sum():
     value1 = 5
     value2 = 7
