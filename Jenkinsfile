@@ -8,7 +8,7 @@ pipeline {
 	stage('fix permession'){
 		
 	     steps{
-		    sh "sudo chown root:jenkins /run/docker.sock"
+		    sh "sudo chmod 666 /var/run/docker.sock"
 		}
 	    
 	}
