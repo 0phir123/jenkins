@@ -10,7 +10,7 @@ pipeline {
 
 	stage('Test for py') {
             steps {
-                sh " sudo pytest"
+                sh "pytest"
             }
         }
     }
