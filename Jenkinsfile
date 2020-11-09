@@ -9,7 +9,7 @@ pipeline {
 	stage('Test for py') {
             steps {
 		
-		sh "pip install pytest"
+		sh "pip install pytest --user"
                 sh "pytest"
             }
         }
